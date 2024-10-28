@@ -1,0 +1,4 @@
+../Core/Src/crc.c:52:10:crc_16	4
+../Core/Src/crc.c:80:10:crc_modbus	4
+../Core/Src/crc.c:107:10:update_crc_16	2
+../Core/Src/crc.c:124:13:init_crc16_tab	4
