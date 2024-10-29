@@ -12,6 +12,7 @@ El proyecto estará dividido en diferentes experiencias incrementales.
    - Paso 1: Introducción al entorno STM32CubeIDE para generar código HAL.
    - Paso 2: Configuración de los pines TX y RX y parámetros del UART en STM32CubeIDe.
    - Paso 3: Generar el código inicial en STM32CubeIDE y cargar un código básico que envíe y reciba datos en una terminal serie usando UART.
+
 **Práctica:** Realizar un bucle de eco donde los datos recibidos por UART se reenvíen a la terminal, todo en el mismo dispositivo.
 
 ### Experiencia 2: Introducción a RS485
@@ -29,6 +30,7 @@ El proyecto estará dividido en diferentes experiencias incrementales.
    - Paso 2: Habilitar interrupciones de UART para mejorar la eficiencia de comunicación.
    - Paso 3: Crear formato de paquete adecuado para la transmisión de información
    - Adecuación del código de la experiencia anterior para la transmisión mediante interrupciones
+
 **Práctica:** Realizar un intercambio de datos donde se envíen datos desde una STM32 a otra garantizando la llegada del mensaje, haciendo uso de las interrupciones.
 
 ### Experiencia 4: Mejora de comunicación entre dos STM32 usando RS485
@@ -36,12 +38,14 @@ El proyecto estará dividido en diferentes experiencias incrementales.
    - Paso 1: Aplicar protocolos de control de errores como CRC y ACK.
    - Paso 2: Implementar temporización y retransmisión en caso de fallo.
    - Paso 3: Crear formato de paquete propio y adecuado para la transmisión
+
 **Práctica:** Realizar una comunicación bidireccional con verificación de recepción (ACK) entre STM32 utilizando RS485 y CRC para verificar la integridad del mensaje.
 
 ## Práctica final
 **Objetivo:** Crear una aplicación más compleja utilizando la comunicación RS485.
    - Paso 1: Explicar cómo se pueden interconectar múltiples dispositivos en un bus RS485 (modo maestro / esclavo).
    - Paso 2: Crear un formato de paquetes propio con un ID para que cada STM32 funcione en modo maestro/esclavo, pudiendo enviar comandos o datos desde cada dispositivo.
+
 **Práctica:** Crear una pequeña red con 2 STM32, donde un dispositivo funcione como maestro y el otro como esclavo.
 Se deberá realizar, la petición del maestro al esclavo indicando este tipo de mensaje encendiendo una LED y respondiendo al maestro mediante un paquete de tipo ACK.
 Cuando el maestro pulse un botón este realizará una emisión broadcast que se deberá indicar encendiendo otra LED cuando se reciba el mensaje pero no se tendrá que responder al maestro en este caso. 
