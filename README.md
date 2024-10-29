@@ -22,6 +22,7 @@ El proyecto estará dividido en diferentes experiencias incrementales.
    - Paso 3: En el archivo .ioc, configurar la UART en modo half-duplex.
    - Paso 4: Crear una función para controlar el envío y recepción de datos (habilitar 485_E para transmisión y deshabilitarlo para recepción).
    - Paso 5: Programar una comunicación básica donde una placa envíe un mensaje y la otra lo reciba.
+
 **Práctica:** Enviar y recibir mensajes de una STM32 a la otra, por muestreo.
 
 ### Experiencia 3: Comunicación entre dos STM32 usando RS485 mediante interrupciones
